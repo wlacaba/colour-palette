@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FAFAFA;
+  color: #000930;
+}
+
+::selection {
+  background: #ff1744;
+}
+
+::-moz-selection {
+  background: #ff1744;
+}

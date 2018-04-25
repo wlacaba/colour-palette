@@ -1,0 +1,8 @@
+<!-- 
+An SVG of the app logo. Just convert this to png to get the favicon.
+-->
+<svg width="190" height="190">
+  <circle cx="60" cy="65" r="33" fill="#66fcf1"></circle>
+  <circle cx="130" cy="65" r="33" fill="#ff1744"></circle>
+  <circle cx="95" cy="125" r="33" fill="#000930"></circle>
+</svg>

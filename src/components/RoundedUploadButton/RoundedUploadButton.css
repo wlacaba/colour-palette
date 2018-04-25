@@ -1,0 +1,26 @@
+label {
+  display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 40px;
+	font-size: 0.75em;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #66fcf1
+}
+
+input {
+  display: none;
+}
+
+label::selection {
+	background-color: transparent;
+}
+
+label::-moz-selection {
+	background-color: transparent;
+}
