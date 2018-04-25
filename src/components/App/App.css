@@ -24,6 +24,18 @@ header {
   align-items: center;
 }
 
+table {
+  empty-cells: show;
+  width: 50%;
+  border-spacing: 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}

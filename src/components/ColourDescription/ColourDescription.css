@@ -1,0 +1,26 @@
+.holder {
+  height: 60px;
+}
+
+.left {
+  order: 0;
+  width: 50%;
+  margin-right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.right {
+  order: 1;
+  width: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media only screen and (max-width: 400px) {
+  .holder {
+    width: 100%;
+  }
+}

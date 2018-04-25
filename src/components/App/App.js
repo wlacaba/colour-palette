@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RoundedUploadButton from '../RoundedUploadButton/RoundedUploadButton'
 import UploadedImage from '../UploadedImage/UploadedImage'
+import ColourDescription from '../ColourDescription/ColourDescription'
 import './App.css';
 
 export default class App extends Component {
@@ -45,10 +46,22 @@ export default class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>Welcome to Colour Palette! To get started, upload an image.</h1>
+          <h1>Welcome to Colour Palette!</h1>
           <RoundedUploadButton id="upload" value="UPLOAD" onChange={this.handleUpload}/>
         </header>
         <UploadedImage url={this.state.url}/>
+
+        {/*Just figuring out how I want stuff to look. Will make a component later.*/}
+        <table cellSpacing="0">
+          <tbody>
+            <ColourDescription rgb="#66fcf1"/>
+            <ColourDescription rgb="#ff1744"/>
+            <ColourDescription rgb="#000930"/>
+          </tbody>
+        </table>
+        <footer>
+          <p>Made by Warren Lacaba.</p>
+        </footer>
       </div>
     );
   }
