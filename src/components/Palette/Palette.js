@@ -7,7 +7,7 @@ export default class Palette extends Component {
     return (
       <table className="palette-table" cellSpacing="0">
         <tbody>
-          {this.props.colours.map(colour => <ColourDescription rgb={colour}/>)}
+          {this.props.colours.map(colour => <ColourDescription key={colour} rgb={colour}/>)}
         </tbody>
       </table>
     );

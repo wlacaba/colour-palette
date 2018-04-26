@@ -45,7 +45,7 @@ export default class App extends Component {
 
   render() {
     console.log("App rendered");
-    let colours = ['#66fcf1', '#ff1744', '#000930'];
+    let colours = ['#4527A0', '#283593', '#1565C0', '#0277BD', '#00838F', '#00695C', '#2E7D32'];
     return (
       <div className="app">
         <header>
