@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import RoundedUploadButton from '../RoundedUploadButton/RoundedUploadButton'
 import UploadedImage from '../UploadedImage/UploadedImage'
 import RoundedSaveButton from '../RoundedSaveButton/RoundedSaveButton'
-import ColourDescription from '../ColourDescription/ColourDescription'
+import Palette from '../Palette/Palette'
 import './App.css';
 
 export default class App extends Component {
@@ -54,12 +54,7 @@ export default class App extends Component {
         </header>
 
         <UploadedImage url={this.state.url}/>
-        {/*Just figuring out how I want stuff to look. Will make a component later.*/}
-        <table cellSpacing="0">
-          <tbody>
-            {colours.map(colour => <ColourDescription rgb={colour}/>)}
-          </tbody>
-        </table>
+        <Palette colours={colours}/> {/*Will pass this.state.colourPalette later when it's ready*/}
         <RoundedSaveButton/>
 
         <footer>
