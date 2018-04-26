@@ -45,6 +45,7 @@ export default class App extends Component {
 
   render() {
     console.log("App rendered");
+    let colours = ['#66fcf1', '#ff1744', '#000930'];
     return (
       <div className="app">
         <header>
@@ -56,9 +57,7 @@ export default class App extends Component {
         {/*Just figuring out how I want stuff to look. Will make a component later.*/}
         <table cellSpacing="0">
           <tbody>
-            <ColourDescription rgb="#66fcf1"/>
-            <ColourDescription rgb="#ff1744"/>
-            <ColourDescription rgb="#000930"/>
+            {colours.map(colour => <ColourDescription rgb={colour}/>)}
           </tbody>
         </table>
         <RoundedSaveButton/>
