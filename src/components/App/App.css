@@ -1,14 +1,8 @@
-.App {
+.app {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-
-  -webkit-animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -ms-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  animation: fadein 1s;
 }
 
 h1 {
@@ -34,14 +28,4 @@ table {
   table {
     width: 100%;
   }
-}
-
-@-webkit-keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
 }

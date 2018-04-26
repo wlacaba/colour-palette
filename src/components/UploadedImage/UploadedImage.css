@@ -3,32 +3,11 @@
   max-height: 500px;
   border-radius: 15px;
   margin-bottom: 30px;
-
-  -webkit-animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -ms-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  animation: fadein 1s;
-}
-
-@-webkit-keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
 }
 
 @media only screen and (max-width: 768px) {
-  #photoHolder {
-    width: 100%;
-  }
-
   #uploaded {
     max-width: 100%;
     max-height: none;
-    border-radius: 15px;
   }
 }

@@ -1,4 +1,4 @@
-.roundeduploadbutton-button {
+.roundedsavebutton-button {
   display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -7,20 +7,17 @@
 	height: 40px;
 	font-size: 0.75em;
 	border-radius: 25px;
-	border: none;
+  border: none;
+  margin-top: 15px;
 	cursor: pointer;
 	font-weight: bold;
-	background-color: #66fcf1;
+	background-color: #ff1744;
 }
 
-.roundeduploadbutton-invisible {
-  display: none;
-}
-
-.roundeduploadbutton-button::selection {
+.roundedsavebutton-button::selection {
 	background-color: transparent;
 }
 
-.roundeduploadbutton-button::-moz-selection {
+.roundedsavebutton-button::-moz-selection {
 	background-color: transparent;
 }

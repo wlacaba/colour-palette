@@ -1,26 +1,23 @@
-.holder {
+.colourdescription-row {
   height: 60px;
 }
 
-.left {
-  order: 0;
+.colourdescription-left {
   width: 50%;
-  margin-right: 0;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
-.right {
-  order: 1;
+.colourdescription-right {
   width: 50%;
   border-style: solid;
   border-width: 2px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 @media only screen and (max-width: 400px) {
-  .holder {
+  .colourdescription-row {
     width: 100%;
   }
 }
