@@ -44,7 +44,7 @@ test("Array should be flipped exactly", () => {
   }
 });
 
-test("Average colours", () => {
+test("Average colours are #551edb and #4e6a6a.", () => {
   let colourArray = [
     [20, 40, 230],
     [95, 12, 12],

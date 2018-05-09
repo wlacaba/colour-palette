@@ -53,8 +53,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log("App rendered");
-
     return (
       <div className="app">
         <header>
