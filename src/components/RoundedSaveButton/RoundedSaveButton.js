@@ -7,10 +7,10 @@ export default class RoundedSaveButton extends Component {
 		let context = canvas.getContext('2d');
 		let startX = 0;
 		let startY = 0;
-		let height = 250;
-		let textY = 125;
-		canvas.width = 1000;
-		canvas.height = 2000;
+		let height = 240;
+		let textY = 120;
+		canvas.width = 1080;
+		canvas.height = 1920;
 
 		if (context) {
 			context.textAlign = "center";
