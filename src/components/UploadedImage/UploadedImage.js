@@ -32,7 +32,8 @@ export default class UploadedImage extends Component {
         rgbValues.push(entry);
       }
       let newPalette = [];
-      medianCut(rgbValues, 4, 0, newPalette);
+      //3 levels will give a palette of 8.
+      medianCut(rgbValues, 3, 0, newPalette);
       this.props.updateColours(newPalette);
     }
   }

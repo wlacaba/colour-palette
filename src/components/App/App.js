@@ -11,10 +11,9 @@ export default class App extends Component {
       file: "",
       url: require("../../img/Flowers-Default.jpg"),
       colourPalette: [
-        "#e3dad3","#c2b9bc","#a1b1bc","#94a4b1",
-        "#a5a4a6","#b5a78a","#a38a8e","#a66b5c",
-        "#798e9e","#6f7f8b","#676c75","#4b5f6e",
-        "#585648","#3f3e3c","#39251c","#141717"]
+        "#d3cac8","#9aabb6","#ada598","#a57b75",
+        "#748794","#596671","#4b4a42","#271e1a"
+      ]
     }
   }
 
@@ -64,7 +63,7 @@ export default class App extends Component {
         <Palette colours={this.state.colourPalette}/>
 
         <footer>
-          <p>Work in progress. Made by Warren Lacaba, 2018.</p>
+          <p>Work in progress. Made by <a href="https://wlacaba.github.io">Warren Lacaba</a>, 2018.</p>
         </footer>
       </div>
     );
