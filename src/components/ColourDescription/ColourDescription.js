@@ -7,7 +7,6 @@ export default class ColourDescription extends Component {
     return (nextProps.rgb !== this.props.rgb);
   }
   render() {
-    console.log("ColourDescription rendered");
     return (
       <tr className="colourdescription-row">
         <td className="colourdescription-left" style={{backgroundColor: this.props.rgb}}></td>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RoundedUploadButton from '../RoundedUploadButton/RoundedUploadButton'
+import RoundedSaveButton from '../RoundedSaveButton/RoundedSaveButton'
 import UploadedImage from '../UploadedImage/UploadedImage'
 import Palette from '../Palette/Palette'
 import './App.css';
@@ -61,9 +62,10 @@ export default class App extends Component {
 
         <UploadedImage url={this.state.url} updateColours={this.handleColourChange}/>
         <Palette colours={this.state.colourPalette}/>
+        <RoundedSaveButton colours={this.state.colourPalette}/>
 
         <footer>
-          <p>Work in progress. Made by <a href="https://wlacaba.github.io">Warren Lacaba</a>, 2018.</p>
+          <p>Made by <a href="https://wlacaba.github.io">Warren Lacaba</a>, 2018.</p>
         </footer>
       </div>
     );

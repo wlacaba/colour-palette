@@ -38,13 +38,16 @@ export default class UploadedImage extends Component {
     }
   }
 
+  shouldComponentUpdate = (nextProps, nextState) => {
+    return this.props.url !== nextProps.url;
+  }
+
   //Only perform image analysis when we're sure the component updated. 
   componentDidUpdate = (prevProps, prevState, snapshot) => {
     this.analyzeImage();
   }
 
   render() {
-    console.log("UploadedImage rendered");
     return (
       <img src={this.props.url} id="uploaded" alt="Uploaded"/>
     );

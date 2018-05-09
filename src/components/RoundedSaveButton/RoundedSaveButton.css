@@ -12,6 +12,7 @@
 	cursor: pointer;
 	font-weight: bold;
 	background-color: #ff1744;
+	outline: none;
 }
 
 .roundedsavebutton-button::selection {
