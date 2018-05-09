@@ -4,10 +4,11 @@ import './Palette.css'
 
 export default class Palette extends Component {
   render() {
+    let i = 0;
     return (
       <table className="palette-table" cellSpacing="0">
         <tbody>
-          {this.props.colours.map(colour => <ColourDescription key={colour} rgb={colour}/>)}
+          {this.props.colours.map(colour => <ColourDescription key={i++} rgb={colour}/>)}
         </tbody>
       </table>
     );

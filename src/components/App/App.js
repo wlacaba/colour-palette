@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import RoundedUploadButton from '../RoundedUploadButton/RoundedUploadButton'
 import UploadedImage from '../UploadedImage/UploadedImage'
-import RoundedSaveButton from '../RoundedSaveButton/RoundedSaveButton'
 import Palette from '../Palette/Palette'
 import './App.css';
 
@@ -10,8 +9,12 @@ export default class App extends Component {
     super(props);
     this.state = {
       file: "",
-      url: require("../../img/PortageAve-DefaultIMG.jpg"),
-      colourPalette: []
+      url: require("../../img/Flowers-Default.jpg"),
+      colourPalette: [
+        "#e3dad3","#c2b9bc","#a1b1bc","#94a4b1",
+        "#a5a4a6","#b5a78a","#a38a8e","#a66b5c",
+        "#798e9e","#6f7f8b","#676c75","#4b5f6e",
+        "#585648","#3f3e3c","#39251c","#141717"]
     }
   }
 
@@ -43,9 +46,15 @@ export default class App extends Component {
     }
   } 
 
+  handleColourChange = (newValues) => {
+    this.setState({
+      colourPalette: newValues
+    });
+  }
+
   render() {
     console.log("App rendered");
-    let colours = ['#4527A0', '#283593', '#1565C0', '#0277BD', '#00838F', '#00695C', '#2E7D32'];
+
     return (
       <div className="app">
         <header>
@@ -53,9 +62,8 @@ export default class App extends Component {
           <RoundedUploadButton id="upload" value="UPLOAD" onChange={this.handleUpload}/>
         </header>
 
-        <UploadedImage url={this.state.url}/>
-        <Palette colours={colours}/> {/*Will pass this.state.colourPalette later when it's ready*/}
-        <RoundedSaveButton/>
+        <UploadedImage url={this.state.url} updateColours={this.handleColourChange}/>
+        <Palette colours={this.state.colourPalette}/>
 
         <footer>
           <p>Made by Warren Lacaba.</p>

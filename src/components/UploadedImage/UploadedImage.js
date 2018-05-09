@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import '../../logic/ColourProcessor';
 import './UploadedImage.css'
+import {medianCut} from '../../logic/ColourProcessor';
 
 export default class UploadedImage extends Component {
   /*
@@ -14,12 +16,24 @@ export default class UploadedImage extends Component {
     let img = document.getElementById('uploaded');
 
     img.onload = () => {
-      myCanvas.width = img.width;
-      myCanvas.height = img.height;
+      let ratio = img.height/img.width;
+      myCanvas.width = 150;
+      myCanvas.height = ratio*150;
 
-      context.drawImage(img, 0, 0);
-      let myData = context.getImageData(0, 0, img.width, img.height);
-      console.log(myData.data); //Do work here
+      context.drawImage(img, 0, 0, myCanvas.width, myCanvas.height);
+      let myData = context.getImageData(0, 0, myCanvas.width, myCanvas.height);
+      let theColours = myData.data;
+      let i = 0;
+
+      let rgbValues = []
+
+      for (i; i < theColours.length; i+=4){
+        let entry = [theColours[i], theColours[i+1], theColours[i+2]];
+        rgbValues.push(entry);
+      }
+      let newPalette = [];
+      medianCut(rgbValues, 4, 0, newPalette);
+      this.props.updateColours(newPalette);
     }
   }
 
