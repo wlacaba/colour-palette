@@ -66,7 +66,7 @@ export default class App extends Component {
         <Palette colours={this.state.colourPalette}/>
 
         <footer>
-          <p>Made by Warren Lacaba.</p>
+          <p>Work in progress. Made by Warren Lacaba, 2018.</p>
         </footer>
       </div>
     );
