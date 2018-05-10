@@ -3,6 +3,7 @@
   max-height: 500px;
   border-radius: 5px;
   margin-bottom: 30px;
+  image-orientation: from-image;
 }
 
 @media only screen and (max-width: 768px) {
